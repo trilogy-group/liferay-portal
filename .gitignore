@@ -202,3 +202,5 @@
 /working.dir.properties
 /WEB-INF
 _sass_cache_*.css
+/docker/venv
+.stfolder

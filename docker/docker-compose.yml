@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  man:
+    build: .
+    image: buildimg
+    ports:
+      - "18080:8080"
