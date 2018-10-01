@@ -1,0 +1,18 @@
+version: '2'
+name: liferay-coll
+images:
+- name: liferay-build-img
+  url: registry2.swarm.devfactory.com/devfactory/liferay-build-img
+configs:
+- name: liferay-conf
+  containers:
+  - name: liferay-build
+    image: liferay-build-img
+    command:
+    - tail
+    args:
+    - -f
+    - /dev/null
+    ports:
+    - port: 8080
+      protocol: TCP
